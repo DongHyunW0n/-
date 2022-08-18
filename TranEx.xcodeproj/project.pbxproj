@@ -13,6 +13,10 @@
 		8F35A95028ADD3DE0025B40F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F35A94E28ADD3DE0025B40F /* Main.storyboard */; };
 		8F35A95228ADD3E30025B40F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F35A95128ADD3E30025B40F /* Assets.xcassets */; };
 		8F35A95528ADD3E30025B40F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F35A95328ADD3E30025B40F /* LaunchScreen.storyboard */; };
+		8F35A95D28ADD51D0025B40F /* SuguePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35A95C28ADD51D0025B40F /* SuguePushViewController.swift */; };
+		8F35A95F28ADD77B0025B40F /* SuguePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35A95E28ADD77B0025B40F /* SuguePresentViewController.swift */; };
+		8F35A96128ADD8E90025B40F /* CodePushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35A96028ADD8E90025B40F /* CodePushViewController.swift */; };
+		8F35A96328ADE0230025B40F /* CodePresentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F35A96228ADE0230025B40F /* CodePresentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		8F35A95128ADD3E30025B40F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8F35A95428ADD3E30025B40F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8F35A95628ADD3E30025B40F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F35A95C28ADD51D0025B40F /* SuguePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguePushViewController.swift; sourceTree = "<group>"; };
+		8F35A95E28ADD77B0025B40F /* SuguePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuguePresentViewController.swift; sourceTree = "<group>"; };
+		8F35A96028ADD8E90025B40F /* CodePushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePushViewController.swift; sourceTree = "<group>"; };
+		8F35A96228ADE0230025B40F /* CodePresentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodePresentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +71,10 @@
 				8F35A95128ADD3E30025B40F /* Assets.xcassets */,
 				8F35A95328ADD3E30025B40F /* LaunchScreen.storyboard */,
 				8F35A95628ADD3E30025B40F /* Info.plist */,
+				8F35A95C28ADD51D0025B40F /* SuguePushViewController.swift */,
+				8F35A95E28ADD77B0025B40F /* SuguePresentViewController.swift */,
+				8F35A96028ADD8E90025B40F /* CodePushViewController.swift */,
+				8F35A96228ADE0230025B40F /* CodePresentViewController.swift */,
 			);
 			path = TranEx;
 			sourceTree = "<group>";
@@ -138,7 +150,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F35A95F28ADD77B0025B40F /* SuguePresentViewController.swift in Sources */,
+				8F35A96128ADD8E90025B40F /* CodePushViewController.swift in Sources */,
+				8F35A95D28ADD51D0025B40F /* SuguePushViewController.swift in Sources */,
 				8F35A94D28ADD3DE0025B40F /* ViewController.swift in Sources */,
+				8F35A96328ADE0230025B40F /* CodePresentViewController.swift in Sources */,
 				8F35A94928ADD3DE0025B40F /* AppDelegate.swift in Sources */,
 				8F35A94B28ADD3DE0025B40F /* SceneDelegate.swift in Sources */,
 			);
