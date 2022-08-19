@@ -7,8 +7,9 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, SendDataDelegate{
 
+    @IBOutlet weak var nameLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -16,16 +17,29 @@ class ViewController: UIViewController {
 
     @IBAction func tabCodePushButton(_ sender: UIButton) {
         
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") else {return}
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePushViewController") as? CodePushViewController else {return}
+        viewController.name = "sibaasdsasaasassadsal;;"
         
-        self.navigationController?.pushViewController(viewController, animated: true)
-    }
+        self.navigationController?.pushViewController(viewController, animated: true)    }
+    
     @IBAction func tabCodePresentButton(_ sender: UIButton) {
         
-        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresent") else {return}
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresent") as? CodePresentViewController else {return}
         viewController.modalPresentationStyle = .fullScreen
+        viewController.name = "sibasdasdsadasdasdasdassaal"
+        viewController.delegate = self
         self.present(viewController, animated: true, completion: nil)
     }
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let viewController = segue.destination as? SuguePushViewController {
+            viewController.name = "hard"
+        }
+    }
+    func sendData(name: String) {
+        self.nameLabel.text = name
+        self.nameLabel.sizeToFit()
+    }
 }
 
